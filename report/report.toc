@@ -1,0 +1,10 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}{Introduction}}{2}{section.1}%
+\contentsline {section}{\numberline {2}{Dataset presentation}}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}{Census grid 2021}}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}{Geographic accessibility}}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}{Communes}}{4}{subsection.2.3}%
+\contentsline {section}{\numberline {3}{Data preprocessing}}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}{Filtering the datasets and creation of indexes}}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}{Population calculation by municipality}}{5}{subsection.3.2}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

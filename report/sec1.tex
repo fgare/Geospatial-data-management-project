@@ -1,0 +1,33 @@
+\section{Introduction}
+
+Access to healthcare services is a fundamental element in ensuring the right to health and reducing territorial inequalities. 
+Everywhere, the distribution of the population and the location of healthcare facilities significantly affect how easily citizens can obtain medical care.
+Geographic distance, population density, and the availability of transport infrastructure play a crucial role in determining actual accessibility to essential services, thereby contributing to differences between urban, rural, and mountainous areas.
+
+This project aims to analyze the ease of access to healthcare in Italy by integrating three datasets provided by Eurostat and the GISCO portal:
+
+\begin{itemize}
+	
+	\item \emph{EU Population (Census 2021)}: contains information on the distribution of the European population in 1 km\textsuperscript{2} grids, useful for assessing demographic density and spatial distribution.
+
+	\item \emph{Geographic Accessibility to Healthcare Services}: provides spatial data on distance and travel time to healthcare facilities, allowing the estimation of geographic accessibility to medical services.
+
+	\item \emph{EU Communes (Municipalities)}: includes the administrative boundaries of European municipalities, essential for aggregating and comparing data at the local level.
+\end{itemize}
+
+By combining and analyzing these sources, it will be possible to build a detailed picture of the Italian situation, highlighting both the areas with the best access to healthcare and those facing greater challenges.
+
+Starting from these data, the study wants to answer the following questions:
+\begin{enumerate}
+	\item Calculate the distribution of population in the country.
+	\item Determine the mean accessibility value to healthcare services in each municipality.
+	\item Determine the amount of population living in the municipalities where the mean accessibility level is low.
+	\item Compare the mean accessibility level value in 2020 and 2023, so as to determine whether there has been an improvement or not.
+\end{enumerate}
+
+This report will be structured as follows:
+\begin{itemize}
+	\item \emph{Section 2}: description of used datasets.
+	\item \emph{Section 3}: data preprocessing.
+	\item \emph{Section 4}: demographic analysis.
+\end{itemize}

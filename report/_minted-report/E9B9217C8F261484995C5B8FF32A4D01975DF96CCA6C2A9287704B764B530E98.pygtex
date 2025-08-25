@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{INDEX}\PYG{+w}{ }\PYG{n}{it\PYGZus{}communes\PYGZus{}idx}
+\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{it\PYGZus{}communes}\PYG{+w}{ }\PYG{k}{USING}\PYG{+w}{ }\PYG{n}{GIST}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{geom}\PYG{p}{);}
+
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{INDEX}\PYG{+w}{ }\PYG{n}{census\PYGZus{}idx}
+\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{census\PYGZus{}2021}\PYG{+w}{ }\PYG{k}{USING}\PYG{+w}{ }\PYG{n}{GIST}\PYG{p}{(}\PYG{n}{geom}\PYG{p}{);}
+
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{INDEX}\PYG{+w}{ }\PYG{n}{accessibility\PYGZus{}idx}
+\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{grid\PYGZus{}accessibility\PYGZus{}health}\PYG{+w}{ }\PYG{k}{USING}\PYG{+w}{ }\PYG{n}{GIST}\PYG{p}{(}\PYG{n}{geom}\PYG{p}{);}
+\end{Verbatim}

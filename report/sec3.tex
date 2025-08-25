@@ -1,0 +1,99 @@
+\section{Data preprocessing}
+
+Prior to the analysis, it was necessary to carry out several preprocessing steps.
+Since the three sources differ in structure and format, it was essential to harmonize them through a series of operations, such as data cleaning and integration of spatial and statistical attributes.
+Such preparatory work was crucial to enable the joint use of the datasets and to derive meaningful indicators, ultimately allowing us to address the research questions formulated at the beginning of this project.
+
+
+\subsection{Filtering the datasets and creation of indexes}
+
+We are going to analyse Italian situation and, for this reason, the first operation to perform is filtering the communes dataset so as to obtain a smaller dataset with only Italian municipalities.
+
+The following query creates a new table called \texttt{it\_communes}, obtained filtering the main table where the attribute \texttt{CNTR\_CODE} assumes the value \texttt{IT}.
+
+\begin{minted}{sql}
+CREATE TABLE it_communes AS (
+	SELECT *
+	FROM "all_communes" c
+	WHERE "CNTR_CODE" = 'IT'
+);
+\end{minted}
+
+An index of type R-Tree was created on the new table \texttt{it\_communes}.
+The same type of index was also created on the other tables: \texttt{census\_2021} and \texttt{grid\_accessibility\_health}.
+
+\begin{minted}{sql}
+CREATE INDEX it_communes_idx
+ON it_communes USING GIST (geom);
+
+CREATE INDEX census_idx
+ON census_2021 USING GIST(geom);
+
+CREATE INDEX accessibility_idx
+ON grid_accessibility_health USING GIST(geom);
+\end{minted}
+
+
+\subsection{Population calculation by municipality}
+
+Since the dataset related to communes only contains borders information but no data regarding the population, it was necessary to integrate it with \texttt{census\_2021} dataset.
+However, as described in the dataset presentation, they divide territory in different way: the \texttt{communes} dataset has the precise polygon representing commune border, while \texttt{census} dataset rely on a grid of cells.
+This obliged us to perform some form of approximation in order to compute commune population.
+
+The problem is limited to the cells which intercept a commune border; here the municipal territory can overlap only partly with the cell area.
+There are two possible approximations, we can consider all the cells that intersect the municipal territory or we can consider only the cells entirely within the border.
+In the first case we will have an over-estimate of the population, since we are including people who actually live in another municipality, in the second case we have an under-estimation, since we are excluding some people.
+In both cases the estimate is too rough.
+
+In order to compute the total population in the most possible precise way the following formula was used.
+
+\begin{equation}
+	P_{C} = P_{G} \sum \frac{A(C \cap G)}{A(G)}
+\end{equation}
+
+Here $C$ represents the commune, $G$ represents the cell of the grid and $P$ the population.
+This formula considers the fraction of cell area covered by the commune and multiply it for the total population living inside the cell.
+Obviously, even this formula finds a compromise, assuming people to be uniformly distributed on the cell area.
+
+Here is the query which shows the population for every commune in Italy.
+Since we know cells to have an area of 1 km\textsuperscript{2}, we can omit \mintinline{sql}|ST_AREA(g.geom)| from the denominator, substituting it with $1'000'000$, that is 1 km\textsuperscript{2} converted to m\textsuperscript{2}.
+
+\begin{minted}{sql}
+SELECT 
+	c."COMM_ID",
+	c."COMM_NAME", 
+	ROUND(SUM(ST_AREA(ST_INTERSECTION(g.geom, c.geom))/1000000 * g."T"))
+FROM 
+	census_2021 g JOIN it_communes c ON ST_INTERSECTS(g.geom, c.geom)
+GROUP BY c."COMM_ID", c."COMM_NAME"
+ORDER BY c."COMM_NAME";
+\end{minted}
+
+We are going to store the computed value for population in a new column of the table \texttt{it\_communes} called \texttt{pop}.
+
+\begin{minted}{sql}
+ALTER TABLE it_communes ADD COLUMN pop INTEGER;
+\end{minted}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

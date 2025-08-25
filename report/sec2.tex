@@ -1,0 +1,76 @@
+\section{Dataset presentation}
+
+For this project, three datasets provided by GISCO have been used.
+GISCO, the \emph{Geographic Information System of the European Commission}, is the platform responsible for managing and disseminating geographical and cartographic data related to European statistics.
+It is maintained by Eurostat, the statistical office of the European Union.
+
+The three dataset chosen for this study are the following:
+\begin{itemize}
+	\item \emph{Census grid 2021}
+	\item \emph{Geographic accessibility}
+	\item \emph{Communes}
+\end{itemize}
+
+
+\subsection{Census grid 2021}
+
+The Census Grid 2021 dataset, published by Eurostat, provides a harmonized representation of the resident population across the European Union based on the reference year 2021.
+The dataset distributes population counts into a regular grid of 1 km\textsuperscript{2} cells, offering a highly detailed spatial perspective on demographic distribution.
+Unlike administrative boundaries, which vary in size and shape across countries, the grid system ensures comparability and uniformity, making it particularly suitable for spatial analysis and cross-country studies.
+
+Every cell contains the following demographic aggregated information:
+\begin{itemize}
+	\item Distribution by sex (male, female)
+	\item Age group (under 15 years, 15-64, 65 years and over)
+	\item Current activity status (number of employed persons)
+	\item Place of birth (place of birth in reporting country, place of birth in other EU country, place of birth elsewhere)
+	\item Place of usual residence (total population)
+	\item Place of usual residence one year prior to the census (usual residence unchanged, move within the reporting country, move from outside the reporting country)
+\end{itemize}
+
+Dataset uses ETRS89 as a reference system.
+
+
+\subsection{Geographic accessibility}
+
+The Geographic Accessibility to Healthcare Services dataset provides harmonized information on the ease of reaching healthcare facilities across the European Union and EFTA countries. 
+The dataset is based on a grid of cells of 1 km\textsuperscript{2} and contains indicators of accessibility expressed in terms of travel distance and travel time from each grid cell to the nearest healthcare service.
+Travel time data rely on transport time measures using road network.
+
+This dataset provides two indicators for accessibility:
+\begin{itemize}
+	\item driving time from each populated 1km\textsuperscript{2} cell to the nearest healthcare service
+	\item the average driving time to the three nearest services.
+\end{itemize}
+
+Each time indicator is available for the reference years 2020 and 2023.
+
+\subsection{Communes}
+
+The Communes dataset contains the official administrative boundaries of municipalities (also referred to as communes or local administrative units, LAU level 2) across the European Union. 
+Municipalities represent the lowest level of administrative governance in most European countries, making this dataset an essential reference for analyses that require a fine territorial granularity.
+
+Here is the list of available fields:
+\begin{itemize}
+	\item COMM\_ID: identification code of the municipality;
+	\item CNTR\_ID: here is simply the copy of CNTR\_CODE, but it can also be an internal identification number of Eurostat;
+	\item CNTR\_CODE: country code as for ISO 3166-1 alpha-2;
+	\item COMM\_NAME: name of the municipality;
+	\item NAME\_ASCI: name of the municipality without special characters (ASCII characters);
+	\item TRUE\_FLAG: a technical attribute used to distinguish real polygons from those that exist only for cartographic or topological reasons;
+	\item NSI\_CODE: municipality code according to the National Statistics Institute;
+	\item NAME\_NSI: name of the municipality according to the National Statistics Institute;
+	\item NAME\_LATN: name of the municipality written with Latin characters. This is for countries which does not use Latin alphabet (Greece, Bulgaria, etc.);
+	\item NUTS\_CODE: NUTS CODE (Nomenclature of territorial units for statistics).
+\end{itemize}
+
+Dataset uses ETRS89 as a reference system.
+
+
+
+
+
+
+
+
+

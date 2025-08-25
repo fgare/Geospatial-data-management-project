@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{	}\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}ID\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{	}\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}NAME\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{	}\PYG{n}{ROUND}\PYG{p}{(}\PYG{k}{SUM}\PYG{p}{(}\PYG{n}{ST\PYGZus{}AREA}\PYG{p}{(}\PYG{n}{ST\PYGZus{}INTERSECTION}\PYG{p}{(}\PYG{k}{g}\PYG{p}{.}\PYG{n}{geom}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{n}{geom}\PYG{p}{))}\PYG{o}{/}\PYG{l+m+mi}{1000000}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{k}{g}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}T\PYGZdq{}}\PYG{p}{))}
+\PYG{k}{FROM}
+\PYG{+w}{	}\PYG{n}{census\PYGZus{}2021}\PYG{+w}{ }\PYG{k}{g}\PYG{+w}{ }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{it\PYGZus{}communes}\PYG{+w}{ }\PYG{k}{c}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{ST\PYGZus{}INTERSECTS}\PYG{p}{(}\PYG{k}{g}\PYG{p}{.}\PYG{n}{geom}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{n}{geom}\PYG{p}{)}
+\PYG{k}{GROUP}\PYG{+w}{ }\PYG{k}{BY}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}ID\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}NAME\PYGZdq{}}
+\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}NAME\PYGZdq{}}\PYG{p}{;}
+\end{Verbatim}
