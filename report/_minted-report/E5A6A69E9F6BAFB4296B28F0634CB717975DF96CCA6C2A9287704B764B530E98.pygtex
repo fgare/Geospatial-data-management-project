@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{it\PYGZus{}communes}\PYG{+w}{ }\PYG{k}{ADD}\PYG{+w}{ }\PYG{k}{COLUMN}\PYG{+w}{ }\PYG{n}{pop}\PYG{+w}{ }\PYG{n+nb}{INTEGER}\PYG{p}{;}
+
+\PYG{k}{WITH}\PYG{+w}{ }\PYG{n}{pop\PYGZus{}calc}\PYG{+w}{ }\PYG{k}{AS}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{	}\PYG{k}{SELECT}
+\PYG{+w}{		}\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}ID\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{		}\PYG{n}{ROUND}\PYG{p}{(}\PYG{k}{SUM}\PYG{p}{(}\PYG{n}{ST\PYGZus{}Area}\PYG{p}{(}\PYG{n}{ST\PYGZus{}Intersection}\PYG{p}{(}\PYG{k}{g}\PYG{p}{.}\PYG{n}{geom}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{n}{geom}\PYG{p}{))}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mi}{1000000}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{k}{g}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}T\PYGZdq{}}\PYG{p}{))}\PYG{+w}{ }\PYG{k}{AS}\PYG{+w}{ }\PYG{n}{pop}
+\PYG{+w}{	}\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{census\PYGZus{}2021}\PYG{+w}{ }\PYG{k}{g}\PYG{+w}{ }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{it\PYGZus{}communes}\PYG{+w}{ }\PYG{k}{c}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{ST\PYGZus{}Intersects}\PYG{p}{(}\PYG{k}{g}\PYG{p}{.}\PYG{n}{geom}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{n}{geom}\PYG{p}{)}
+\PYG{+w}{	}\PYG{k}{GROUP}\PYG{+w}{ }\PYG{k}{BY}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}ID\PYGZdq{}}
+\PYG{p}{)}
+\PYG{k}{UPDATE}\PYG{+w}{ }\PYG{n}{it\PYGZus{}communes}\PYG{+w}{ }\PYG{k}{c}
+\PYG{k}{SET}\PYG{+w}{ }\PYG{n}{pop}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{.}\PYG{n}{pop}
+\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{pop\PYGZus{}calc}\PYG{+w}{ }\PYG{n}{p}
+\PYG{k}{WHERE}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}ID\PYGZdq{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}ID\PYGZdq{}}\PYG{p}{;}
+\end{Verbatim}

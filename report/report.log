@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.6)  26 AUG 2025 01:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.6)  27 AUG 2025 00:08
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -592,6 +592,136 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 679.
 Package hyperref Info: Option `linktocpage' set `true' on input line 679.
 Package hyperref Info: Option `breaklinks' set `true' on input line 679.
 )
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen175
+\Gin@req@width=\dimen176
+)
+(c:/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count286
+\l__siunitx_number_exponent_fixed_int=\count287
+\l__siunitx_number_min_decimal_int=\count288
+\l__siunitx_number_min_integer_int=\count289
+\l__siunitx_number_round_precision_int=\count290
+\l__siunitx_number_lower_threshold_int=\count291
+\l__siunitx_number_upper_threshold_int=\count292
+\l__siunitx_number_group_first_int=\count293
+\l__siunitx_number_group_size_int=\count294
+\l__siunitx_number_group_minimum_int=\count295
+\l__siunitx_angle_tmp_dim=\dimen177
+\l__siunitx_angle_marker_box=\box55
+\l__siunitx_angle_unit_box=\box56
+\l__siunitx_compound_count_int=\count296
+
+(c:/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages
+ (CN)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen178
+))
+\l__siunitx_table_tmp_box=\box57
+\l__siunitx_table_tmp_dim=\dimen179
+\l__siunitx_table_column_width_dim=\dimen180
+\l__siunitx_table_integer_box=\box58
+\l__siunitx_table_decimal_box=\box59
+\l__siunitx_table_uncert_box=\box60
+\l__siunitx_table_before_box=\box61
+\l__siunitx_table_after_box=\box62
+\l__siunitx_table_before_dim=\dimen181
+\l__siunitx_table_carry_dim=\dimen182
+\l__siunitx_unit_tmp_int=\count297
+\l__siunitx_unit_position_int=\count298
+\l__siunitx_unit_total_int=\count299
+
+(c:/texlive/2024/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen183
+\ar@mcellbox=\box63
+\extrarowheight=\dimen184
+\NC@list=\toks24
+\extratabsurround=\skip104
+\backup@length=\skip105
+\ar@cellbox=\box64
+))
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip106
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen185
+)
+(c:/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count300
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count301
+\leftroot@=\count302
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count303
+\DOTSCASE@=\count304
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box65
+\strutbox@=\box66
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen186
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count305
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count306
+\dotsspace@=\muskip17
+\c@parentequation=\count307
+\dspbrk@lvl=\count308
+\tag@help=\toks25
+\row@=\count309
+\column@=\count310
+\maxfields@=\count311
+\andhelp@=\toks26
+\eqnshift@=\dimen187
+\alignsep@=\dimen188
+\tagshift@=\dimen189
+\tagwidth@=\dimen190
+\totwidth@=\dimen191
+\lineht@=\dimen192
+\@envbody=\toks27
+\multlinegap=\skip107
+\multlinetaggap=\skip108
+\mathdisplay@stack=\toks28
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
 (c:/texlive/2024/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2023/12/18 v2.9 Yet another Pygments shim for LaTeX
 
@@ -601,11 +731,11 @@ b
 
 (c:/texlive/2024/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
-\FV@CodeLineNo=\count286
+\FV@CodeLineNo=\count312
 \FV@InFile=\read3
-\FV@TabBox=\box55
-\c@FancyVerbLine=\count287
-\FV@StepNumber=\count288
+\FV@TabBox=\box67
+\c@FancyVerbLine=\count313
+\FV@StepNumber=\count314
 \FV@OutFile=\write3
 )
 (c:/texlive/2024/texmf-dist/tex/latex/upquote/upquote.sty
@@ -617,50 +747,51 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 (c:/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2023/05/20 line numbers on paragraphs v5.3
-\linenopenalty=\count289
-\output=\toks23
-\linenoprevgraf=\count290
-\linenumbersep=\dimen175
-\linenumberwidth=\dimen176
-\c@linenumber=\count291
-\c@pagewiselinenumber=\count292
-\c@LN@truepage=\count293
-\c@internallinenumber=\count294
-\c@internallinenumbers=\count295
-\quotelinenumbersep=\dimen177
-\bframerule=\dimen178
-\bframesep=\dimen179
-\bframebox=\box56
+\linenopenalty=\count315
+\output=\toks29
+\linenoprevgraf=\count316
+\linenumbersep=\dimen193
+\linenumberwidth=\dimen194
+\c@linenumber=\count317
+\c@pagewiselinenumber=\count318
+\c@LN@truepage=\count319
+\c@internallinenumber=\count320
+\c@internallinenumbers=\count321
+\quotelinenumbersep=\dimen195
+\bframerule=\dimen196
+\bframesep=\dimen197
+\bframebox=\box68
+\linenoamsmath@ams@eqpen=\count322
 LaTeX Info: Redefining \\ on input line 3180.
 )
-\c@FancyVerbWriteLine=\count296
-\c@FancyVerbBufferIndex=\count297
-\c@FancyVerbBufferLength=\count298
-\c@FancyVerbBufferLine=\count299
-\c@FV@oldbufferlength=\count300
-\c@FV@TrueTabGroupLevel=\count301
-\c@FV@TrueTabCounter=\count302
-\FV@TabBox@Group=\box57
-\FV@TmpLength=\skip104
-\c@FV@HighlightLinesStart=\count303
-\c@FV@HighlightLinesStop=\count304
-\FV@LoopCount=\count305
-\FV@NCharsBox=\box58
-\FV@BreakIndent=\dimen180
-\FV@BreakIndentNChars=\count306
-\FV@BreakSymbolSepLeft=\dimen181
-\FV@BreakSymbolSepLeftNChars=\count307
-\FV@BreakSymbolSepRight=\dimen182
-\FV@BreakSymbolSepRightNChars=\count308
-\FV@BreakSymbolIndentLeft=\dimen183
-\FV@BreakSymbolIndentLeftNChars=\count309
-\FV@BreakSymbolIndentRight=\dimen184
-\FV@BreakSymbolIndentRightNChars=\count310
-\c@FancyVerbLineBreakLast=\count311
-\FV@LineBox=\box59
-\FV@LineIndentBox=\box60
-\c@FV@BreakBufferDepth=\count312
-\FV@LineWidth=\dimen185
+\c@FancyVerbWriteLine=\count323
+\c@FancyVerbBufferIndex=\count324
+\c@FancyVerbBufferLength=\count325
+\c@FancyVerbBufferLine=\count326
+\c@FV@oldbufferlength=\count327
+\c@FV@TrueTabGroupLevel=\count328
+\c@FV@TrueTabCounter=\count329
+\FV@TabBox@Group=\box69
+\FV@TmpLength=\skip109
+\c@FV@HighlightLinesStart=\count330
+\c@FV@HighlightLinesStop=\count331
+\FV@LoopCount=\count332
+\FV@NCharsBox=\box70
+\FV@BreakIndent=\dimen198
+\FV@BreakIndentNChars=\count333
+\FV@BreakSymbolSepLeft=\dimen199
+\FV@BreakSymbolSepLeftNChars=\count334
+\FV@BreakSymbolSepRight=\dimen256
+\FV@BreakSymbolSepRightNChars=\count335
+\FV@BreakSymbolIndentLeft=\dimen257
+\FV@BreakSymbolIndentLeftNChars=\count336
+\FV@BreakSymbolIndentRight=\dimen258
+\FV@BreakSymbolIndentRightNChars=\count337
+\c@FancyVerbLineBreakLast=\count338
+\FV@LineBox=\box71
+\FV@LineIndentBox=\box72
+\c@FV@BreakBufferDepth=\count339
+\FV@LineWidth=\dimen259
 )
 (c:/texlive/2024/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
@@ -677,34 +808,34 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )))
 (c:/texlive/2024/texmf-dist/tex/generic/xstring/xstring.sty
 (c:/texlive/2024/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count313
-\xs_countb=\count314
+\xs_counta=\count340
+\xs_countb=\count341
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
 (c:/texlive/2024/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip105
-\fb@frw=\dimen186
-\fb@frh=\dimen187
-\FrameRule=\dimen188
-\FrameSep=\dimen189
+\OuterFrameSep=\skip110
+\fb@frw=\dimen260
+\fb@frh=\dimen261
+\FrameRule=\dimen262
+\FrameSep=\dimen263
 )
 (c:/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count315
-\float@exts=\toks24
-\float@box=\box61
-\@float@everytoks=\toks25
-\@floatcapt=\box62
+\c@float@type=\count342
+\float@exts=\toks30
+\float@box=\box73
+\@float@everytoks=\toks31
+\@floatcapt=\box74
 )
 \minted@appexistsfile=\read4
-\minted@bgbox=\box63
+\minted@bgbox=\box75
 \minted@code=\write4
-\c@minted@FancyVerbLineTemp=\count316
-\c@minted@pygmentizecounter=\count317
-\@float@every@listing=\toks26
-\c@listing=\count318
+\c@minted@FancyVerbLineTemp=\count343
+\c@minted@pygmentizecounter=\count344
+\@float@every@listing=\toks32
+\c@listing=\count345
 )
 runsystem(if not exist _minted-report mkdir _minted-report)...executed.
 
@@ -716,78 +847,86 @@ runsystem(del report.aex)...executed.
 
 (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count319
-\l__pdf_internal_box=\box64
+\l__color_backend_stack_int=\count346
+\l__pdf_internal_box=\box76
 )
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-Package scrbase Info: activating english \abstractname on input line 21.
-Package scrbase Info: activating english \partname on input line 21.
-Package scrbase Info: activating english \figurename on input line 21.
-Package scrbase Info: activating english \tablename on input line 21.
-Package scrbase Info: activating english \contentsname on input line 21.
-Package scrbase Info: activating english \listfigurename on input line 21.
-Package scrbase Info: activating english \listtablename on input line 21.
-Package scrbase Info: activating english \refname on input line 21.
-Package scrbase Info: activating english \indexname on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+Package scrbase Info: activating english \abstractname on input line 26.
+Package scrbase Info: activating english \partname on input line 26.
+Package scrbase Info: activating english \figurename on input line 26.
+Package scrbase Info: activating english \tablename on input line 26.
+Package scrbase Info: activating english \contentsname on input line 26.
+Package scrbase Info: activating english \listfigurename on input line 26.
+Package scrbase Info: activating english \listtablename on input line 26.
+Package scrbase Info: activating english \refname on input line 26.
+Package scrbase Info: activating english \indexname on input line 26.
  (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen190
-\scratchbox=\box65
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen191
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks28
-)
-\big@size=\dimen192
-LaTeX Info: Redefining \microtypecontext on input line 21.
-Package microtype Info: Applying patch `item' on input line 21.
-Package microtype Info: Applying patch `toc' on input line 21.
-Package microtype Info: Applying patch `eqnum' on input line 21.
-Package microtype Info: Applying patch `footnote' on input line 21.
-Package microtype Info: Applying patch `verbatim' on input line 21.
+\scratchcounter=\count347
+\scratchdimen=\dimen264
+\scratchbox=\box77
+\nofMPsegments=\count348
+\nofMParguments=\count349
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count350
+\MPscratchDim=\dimen265
+\MPnumerator=\count351
+\makeMPintoPDFobject=\count352
+\everyMPtoPDFconversion=\toks34
+) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Info: Redefining \microtypecontext on input line 26.
+Package microtype Info: Applying patch `item' on input line 26.
+Package microtype Info: Applying patch `toc' on input line 26.
+Package microtype Info: Applying patch `eqnum' on input line 26.
+Package microtype Info: Applying patch `footnote' on input line 26.
+Package microtype Info: Applying patch `verbatim' on input line 26.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 21.
+LaTeX Info: Redefining \showhyphens on input line 26.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+
+(c:/texlive/2024/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 21.
+Package hyperref Info: Link coloring ON on input line 26.
  (./report.out)
 (./report.out)
 \@outlinefile=\write5
@@ -800,19 +939,25 @@ Class scrartcl Info: loading recommended package `bookmark'.
 (scrartcl)           `bookmarkpackage=false' before \begin{document} and
 (scrartcl)           you can avoid this message adding:
 (scrartcl)             \usepackage{bookmark}
-(scrartcl)           before \begin{document} on input line 21.
+(scrartcl)           before \begin{document} on input line 26.
  (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
 (c:/texlive/2024/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO
 )
-\BKM@id=\count326
+\BKM@id=\count353
 ))
+(c:/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionar
+y-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `tra
+nslations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' f
+or `english'. on input line 26.
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 2
-4.
-
-(c:/texlive/2024/texmf-dist/tex/latex/base/t1cmss.fd
+9.
+ (c:/texlive/2024/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -820,31 +965,31 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 
-24.
+29.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
 LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
-24.
+29.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
-24.
+29.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
-24.
+29.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-24.
+29.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -853,7 +998,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package tocbasic Info: character protrusion at toc deactivated on input line 25
+Package tocbasic Info: character protrusion at toc deactivated on input line 30
 .
  (./report.toc
 Package microtype Info: Character `029' is missing
@@ -942,33 +1087,68 @@ E98.pygtex)
 \openout3 = `report.pyg'.
 
 
-(./_minted-report/337E9CC04E7F463683BAFE1E2CE9E4F4975DF96CCA6C2A9287704B764B530
+(./_minted-report/E5A6A69E9F6BAFB4296B28F0634CB717975DF96CCA6C2A9287704B764B530
 E98.pygtex
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 5.10004pt on input line 5.
+(Font)              scaled to size 5.10004pt on input line 7.
 )
 \openout3 = `report.pyg'.
 
 
-(./_minted-report/6BF50E536315BDDA12D0A7191ECB7AAB975DF96CCA6C2A9287704B764B530
-E98.pygtex)) [6] (./report.aux)
+(./_minted-report/D4BE4E33039D521016AFF1A383FFD9A4975DF96CCA6C2A9287704B764B530
+E98.pygtex) [6]) (./sec4.tex
+<img/regioni per popolazione.pdf, id=69, 614.295pt x 794.97pt>
+File: img/regioni per popolazione.pdf Graphic file (type pdf)
+<use img/regioni per popolazione.pdf>
+Package pdftex.def Info: img/regioni per popolazione.pdf  used on input line 19
+.
+(pdftex.def)             Requested size: 268.80103pt x 347.85918pt.
+<img/province per popolazione.pdf, id=70, 614.295pt x 794.97pt>
+File: img/province per popolazione.pdf Graphic file (type pdf)
+<use img/province per popolazione.pdf>
+Package pdftex.def Info: img/province per popolazione.pdf  used on input line 2
+6.
+(pdftex.def)             Requested size: 268.80103pt x 347.85918pt.
+<img/pop_by_comm_hist.pdf, id=72, 462.52798pt x 346.89601pt>
+File: img/pop_by_comm_hist.pdf Graphic file (type pdf)
+<use img/pop_by_comm_hist.pdf>
+Package pdftex.def Info: img/pop_by_comm_hist.pdf  used on input line 39.
+(pdftex.def)             Requested size: 268.80103pt x 201.60739pt.
+ [7] [8 <./img/regioni per popolazione.pdf>]
+[9 <./img/province per popolazione.pdf>]
+<img/numOfComm_by_class_v2.pdf, id=95, 722.7pt x 433.62pt>
+File: img/numOfComm_by_class_v2.pdf Graphic file (type pdf)
+<use img/numOfComm_by_class_v2.pdf>
+Package pdftex.def Info: img/numOfComm_by_class_v2.pdf  used on input line 46.
+(pdftex.def)             Requested size: 336.0pt x 201.59813pt.
+) [10 <./img/pop_by_comm_hist.pdf> <./img/numOfComm_by_class_v2.pdf>] [11] (./r
+eport.aux
+
+Package mparhack Warning: Marginpars may have changed.
+(mparhack)                Rerun to get them right.
+
+)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 runsystem(del report.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 22394 strings out of 476012
- 434089 string characters out of 5791665
- 1940496 words of memory out of 5000000
- 43876 multiletter control sequences out of 15000+600000
- 633647 words of font info for 314 fonts, out of 8000000 for 9000
+ 27372 strings out of 476012
+ 569591 string characters out of 5791665
+ 1946496 words of memory out of 5000000
+ 48724 multiletter control sequences out of 15000+600000
+ 646497 words of font info for 376 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 108i,24n,121p,10928b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,23n,121p,10928b,1132s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dis
@@ -980,10 +1160,10 @@ dist/fonts/type1/public/bera/fvmro8a.pfb><c:/texlive/2024/texmf-dist/fonts/type
 1/public/cm-super/sfsx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/c
 m-super/sfsx2074.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplr8
 a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on report.pdf (6 pages, 155727 bytes).
+Output written on report.pdf (11 pages, 817635 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
- 77377 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 275 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 87653 words of extra memory for PDF output out of 89155 (max. 10000000)
 

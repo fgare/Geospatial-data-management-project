@@ -7,4 +7,6 @@
 \contentsline {section}{\numberline {3}{Data preprocessing}}{4}{section.3}%
 \contentsline {subsection}{\numberline {3.1}{Filtering the datasets and creation of indexes}}{5}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}{Population calculation by municipality}}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}{Mean accessibility to healthcare services}}{6}{subsection.3.3}%
+\contentsline {section}{\numberline {4}{Study of the Italian territory}}{7}{section.4}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

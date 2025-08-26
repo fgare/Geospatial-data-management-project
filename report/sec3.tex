@@ -34,6 +34,7 @@ ON grid_accessibility_health USING GIST(geom);
 \end{minted}
 
 
+
 \subsection{Population calculation by municipality}
 
 Since the dataset related to communes only contains borders information but no data regarding the population, it was necessary to integrate it with \texttt{census\_2021} dataset.
@@ -51,49 +52,64 @@ In order to compute the total population in the most possible precise way the fo
 	P_{C} = P_{G} \sum \frac{A(C \cap G)}{A(G)}
 \end{equation}
 
-Here $C$ represents the commune, $G$ represents the cell of the grid and $P$ the population.
+Here $C$ represents the commune, $G$ represents the cell of the grid and $P$ the population.\\
 This formula considers the fraction of cell area covered by the commune and multiply it for the total population living inside the cell.
 Obviously, even this formula finds a compromise, assuming people to be uniformly distributed on the cell area.
 
-Here is the query which shows the population for every commune in Italy.
+We are going to store the computed value for population in a new column of the table \texttt{it\_communes} called \texttt{pop}.
+Here is the query to add the new column and insert the value for population for each commune in Italy.
 Since we know cells to have an area of 1 km\textsuperscript{2}, we can omit \mintinline{sql}|ST_AREA(g.geom)| from the denominator, substituting it with $1'000'000$, that is 1 km\textsuperscript{2} converted to m\textsuperscript{2}.
 
 \begin{minted}{sql}
-SELECT 
-	c."COMM_ID",
-	c."COMM_NAME", 
-	ROUND(SUM(ST_AREA(ST_INTERSECTION(g.geom, c.geom))/1000000 * g."T"))
-FROM 
-	census_2021 g JOIN it_communes c ON ST_INTERSECTS(g.geom, c.geom)
-GROUP BY c."COMM_ID", c."COMM_NAME"
-ORDER BY c."COMM_NAME";
+ALTER TABLE it_communes ADD COLUMN pop INTEGER;
+
+WITH pop_calc AS (
+	SELECT 
+		c."COMM_ID",
+		ROUND(SUM(ST_Area(ST_Intersection(g.geom, c.geom)) / 1000000 * g."T")) AS pop
+	FROM census_2021 g JOIN it_communes c ON ST_Intersects(g.geom, c.geom)
+	GROUP BY c."COMM_ID"
+)
+UPDATE it_communes c
+SET pop = p.pop
+FROM pop_calc p
+WHERE c."COMM_ID" = p."COMM_ID";
 \end{minted}
 
-We are going to store the computed value for population in a new column of the table \texttt{it\_communes} called \texttt{pop}.
+
+
+\subsection{Mean accessibility to healthcare services}
+
+To compute the mean accessibility value for each municipality we need to join data from \texttt{communes} and \texttt{grid\_health\_accessibility} datasets.
+Join operation is performed considering grid cells which intersect the commune area, data are then grouped by commune \texttt{ID} and the average of each column is finally computed.
+Here above the query used to define four more numeric columns and assign the mean value for health services accessibility.
+The meaning of each indicator (column name) is described in the dataset presentation (\ref{subsec:geo_acc_datas_pres}).
 
 \begin{minted}{sql}
-ALTER TABLE it_communes ADD COLUMN pop INTEGER;
+ALTER table it_communes
+ADD COLUMN health_2020_n1 REAL,
+ADD COLUMN health_2020_n3 REAL,
+ADD COLUMN health_2023_n1 REAL,
+ADD COLUMN health_2023_n3 REAL;
+	
+WITH avg_t AS (
+	SELECT
+		c."COMM_ID",
+		AVG(g.health_2020_n1) AS mean_health_2020_n1,
+		AVG(g.health_2020_n3) AS mean_health_2020_n3,
+		AVG(g.health_2023_n1) AS mean_health_2023_n1,
+		AVG(g.health_2023_n3) AS mean_health_2023_n3
+	FROM it_communes c JOIN grid_accessibility_health g ON st_intersects(c.geom, g.geom)
+	GROUP BY c."COMM_ID"
+)
+UPDATE it_communes as c
+SET
+	mean_health_2020_n1 = ROUND(t.mean_health_2020_n1::NUMERIC, 2),
+	mean_health_2020_n3 = ROUND(t.mean_health_2020_n3::NUMERIC, 2),
+	mean_health_2023_n1 = ROUND(t.mean_health_2023_n1::NUMERIC, 2),
+	mean_health_2023_n3 = ROUND(t.mean_health_2023_n3::NUMERIC, 2)
+FROM avg_t t
+WHERE t."COMM_ID"=c."COMM_ID";
 \end{minted}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
