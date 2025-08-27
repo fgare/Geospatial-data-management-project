@@ -4,46 +4,60 @@ This section is a demographic analysis of Italian situation. We want to analyse 
 
 Figure \ref{fig:pop_by_region} shows how population is distributed on a regional level, classifying each region with a graduated scale based on the total inhabitants of the region.
 Five classes have been defined, assigning each class the same interval.
-\footnote{The Sturges's rule was followed, which suggest the number of bins to define when categorizing data.
+\footnote{Sturges's rule was applied to determine the appropriate number of bins for categorizing the data.
 	It states
 	\begin{equation*}
-		k = log_2 n +1
+		k = \lfloor log_2 \rfloor n +1
 	\end{equation*}
-	where $k$ represents the number of bins to be defined and $n$ the total number of elements.}
+	where $k$ represents the number of bins to be defined and $n$ the total number of elements.\\
+	To decide how many classes to define for categorizing regions: $k = \lfloor \log_2 21 \rfloor + 1 = 5$.
+	Although Italy has 20 regions, the dataset counts 21 elements because Trentino-Alto Adige does not have a single NUTS-2 code. Instead, it is represented by two separate codes corresponding to its autonomous provinces.}
 	
 We can see from the figure that Lombardia is largely the most populated region, while Valle d'Aosta, Molise and Basilicata are the least populated.
 
 
-\begin{figure}[tbp]
+\begin{figure}[tb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{img/regioni per popolazione.pdf}
 	\caption{Italian population by region}
 	\label{fig:pop_by_region}
 \end{figure}
 
-\begin{figure}[tbp]
-	\centering
-	\includegraphics[width=0.8\textwidth]{img/province per popolazione.pdf}
-	\caption{Italian provinces by population}
-	\label{fig:pop_by_prov}
-\end{figure}
+%\begin{figure}[tbp]
+%	\centering
+%	\includegraphics[width=0.8\textwidth]{img/province per popolazione.pdf}
+%	\caption{Italian provinces by population}
+%	\label{fig:pop_by_prov}
+%\end{figure}
+
 
 By increasing the resolution we can analyse how the population is distributed at the municipal level.
-The graph on Figure \ref{fig:pop_by_comm} is very right-skewed, meaning that the great majority of Italian population lives in little municipalities, smaller than 50 thousand inhabitants.
+The graph on Figure \ref{hist:pop_by_comm} is very right-skewed, meaning that the great majority of Italian population lives in little municipalities, smaller than 50,000 inhabitants.
 The graph is so right-skewed we can not even see other columns.
 
+The chart on Figure \ref{fig:comm_by_class} illustrates the distribution of Italian municipalities by population size.
+On the left axis, the blue bars represent the number of municipalities within each population class. 
+The right axis shows two lines: the orange line indicates the total population (in millions) within each class, while the red dashed line shows the cumulative population across classes.
 
+The data reveal that the vast majority of Italian municipalities are small, with populations under 10,000 inhabitants. 
+However, these small municipalities account for only a limited share of the total Italian population. 
+In contrast, a relatively small number of large municipalities, those with more than 100,000 inhabitants, concentrate a significant proportion of the population. 
+The cumulative line clearly highlights this imbalance: only a few classes at the upper end capture the majority of residents, despite representing a minority of municipalities overall.
+
+Table \ref{tab:comm_by_class} reports in numbers the situation described until now. 
+
+This pattern emphasizes Italy’s demographic structure, characterized by a high number of small towns and villages, alongside a concentration of population in a limited set of large urban centres.
 
 \begin{figure}[tbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{img/pop_by_comm_hist.pdf}
 	\caption{Distribution of population by municipality}
-	\label{fig:pop_by_comm}
+	\label{hist:pop_by_comm}
 \end{figure}
 
 \begin{figure}[tbp]
 	\centering
-	\includegraphics[width=\textwidth]{img/numOfComm_by_class_v2.pdf}
+	\includegraphics[width=0.8\textwidth]{img/numOfComm_by_class_v2.pdf}
 	\caption{Distribution of Italian communes by population and total population living in communes of that class}
 	\label{fig:comm_by_class}
 \end{figure}
@@ -51,9 +65,9 @@ The graph is so right-skewed we can not even see other columns.
 
 \begin{table}[tbp]
 	\centering
-\begin{tabular}{rccc}
+\begin{tabular}{l S[table-format=4.0] S[table-format=8.0] S[table-alignment-mode = marker]}
 	\toprule
-	Class & No. communes & Total pop. & \% on total\\
+	Class & \text{No. communes} & \text{Total pop.} & \text{\% on total}\\
 	\midrule
 	< 1.000 & 2081 & 1120526 & 1.93\\
 	1.000 – 4.999 & 3580 & 8795876 & 15.12\\
@@ -72,4 +86,12 @@ The graph is so right-skewed we can not even see other columns.
 	\label{tab:comm_by_class}
 \end{table}
 
+\begin{figure}[tbp]
+	\centering
+	\includegraphics[width=\textwidth]{img/comuni_per_classe.pdf}
+	\caption{Classification of communes by population}
+	\label{map:comm_by_pop_N}
+\end{figure}
+
 % TODO possibile inserire un Treemap
+% TODO inserire densità di popolazione
