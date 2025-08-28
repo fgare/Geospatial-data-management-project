@@ -93,7 +93,7 @@ As shown in the histogram in Figure \ref{hist:acc_by_class_N_2023n1}, Northern I
 
 \subsection{Population living in areas with poor healthcare accessibility}
 
-We can calculate the portion of population living in the municipalities of each class, results are shown below.
+We can calculate the portion of population living in the municipalities of each class, results are shown in the following table.
 
 \smallskip
 \begin{center}
@@ -105,15 +105,49 @@ We can calculate the portion of population living in the municipalities of each 
 	2 & 7399725 & 27.23\\
 	3 & 792058 & 2.91\\
 	4 & 143979 & 0.53\\
-	  & \textbf{27171915} & \\
+	  & 27171915 & \\
 	\bottomrule
 \end{tabular}
 \end{center}
 \smallskip
 
 Based on time needed to reach the 3 closest health facilities, we consider those in classes 3 and 4 as municipalities with poor health accessibility.
+There are 936037 people living in communes of the two lower classes, equivalent to 3.44\% of the population.
+
+Overall, the distribution of the population across classes shows a generally favourable situation, with more than 96\% of residents living in municipalities classified as 1 or 2, where access to healthcare facilities is relatively fast.
+Nevertheless, almost one million people (3.44\% of the total population) live in municipalities belonging to classes 3 and 4, which indicates limited accessibility to healthcare services. 
+As discussed before, these areas coincide with sparsely populated rural or mountain regions, where lower population density and geographical barriers constrain the availability of facilities.
 
 
+\begin{figure}[tbp]
+	%\centering
+	\begin{subfigure}{0.2\textwidth}
+		%\centering
+		\includegraphics[width=0.8\textwidth]{img/boxplot_acc_by_comm_2023n3.pdf}
+		\caption{Boxplot of accessibility times}
+		\label{boxplot:acc_by_comm_2023n3}
+	\end{subfigure}
+	\hfill
+	
+	\begin{subfigure}{0.4\textwidth}
+		%\centering
+		\begin{tabular}{l S[table-alignment-mode=marker]}
+			\toprule
+			\textbf{Index} & \textbf{Value}\\
+			\midrule
+			Q1 (25\%) & 13.66\\
+			Median & 17.75\\
+			Q3 (75\%) & 25.8\\
+			Mean & 20.92\\
+			IQR & 12.14\\
+			\bottomrule
+		\end{tabular}
+		\caption{Boxplot statistics for accessibility times}
+		\label{tab:boxplot_idxs}
+	\end{subfigure}
+	
+	\caption{Distribution of municipal accessibility times to the three closest healthcare facilities}
+\end{figure}
 
 
 
