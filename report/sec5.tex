@@ -120,23 +120,23 @@ As discussed before, these areas coincide with sparsely populated rural or mount
 
 
 \begin{figure}[tbp]
-	%\centering
-	\begin{subfigure}{0.2\textwidth}
-		%\centering
-		\includegraphics[width=0.8\textwidth]{img/boxplot_acc_by_comm_2023n3.pdf}
+	\centering
+	\begin{subfigure}{\textwidth}
+		\centering
+		\includegraphics[width=0.8\linewidth]{img/boxplot_acc_by_comm_2023n3.pdf}
 		\caption{Boxplot of accessibility times}
 		\label{boxplot:acc_by_comm_2023n3}
 	\end{subfigure}
-	\hfill
+	\medskip
 	
-	\begin{subfigure}{0.4\textwidth}
-		%\centering
+	\begin{subfigure}{\textwidth}
+		\centering
 		\begin{tabular}{l S[table-alignment-mode=marker]}
 			\toprule
 			\textbf{Index} & \textbf{Value}\\
 			\midrule
 			Q1 (25\%) & 13.66\\
-			Median & 17.75\\
+			Median (50\%) & 17.75\\
 			Q3 (75\%) & 25.8\\
 			Mean & 20.92\\
 			IQR & 12.14\\
@@ -150,6 +150,57 @@ As discussed before, these areas coincide with sparsely populated rural or mount
 \end{figure}
 
 
+\subsection{Change in healthcare accessibility between 2020 and 2023}
+
+This section analyses the change in accessibility to reach the nearest healthcare facility between 2020 and 2023.
+The 7 intervals of change reported in Table \ref{tab:acc_variation_classes} have been defined.
+
+\begin{table}[tb]
+	\centering
+\begin{tabular}{l c S[table-format=4.0]}
+	\toprule
+	\textbf{Class} & \textbf{Interval} [\%] & \textbf{No. communes}\\
+	\midrule
+	Sharp worsening & $\linterval{-\infty}{20}$ & 135\\
+	Relevant worsening & $\linterval{-20}{-10}$ & 348\\
+	Slight worsening & $\linterval{-10}{-5}$ & 586\\
+	No change & $\interval[open]{-5}{5}$ & 2298\\
+	Slight improvement & $\rinterval{5}{10}$ & 494\\
+	Relevant improvement & $\rinterval{10}{20}$ & 355\\
+	Sharp improvement & $\rinterval{20}{+\infty}$ & 236\\
+	\bottomrule
+\end{tabular}
+	\caption{Number of municipalities in each class of percentage change in access time to the nearest health centre}
+	\label{tab:acc_variation_classes}
+\end{table}
+
+\begin{figure}[tbp]
+	\centering
+	\includegraphics[width=\textwidth]{img/var accessibilità n1 nord.pdf}
+	\caption{Percentage variation of accessibility times to reach the closest medical centre from 2020 to 2023 by commune}
+	\label{map:acc_variation_n1}
+\end{figure}
+
+As can be seen from Figure \ref{map:acc_variation_n1}, the majority of municipalities have not undergone significant changes in access times to medical facilities.
+Percentage change in time was obtained with the following query, using this formula:
+\begin{equation*}
+	\Delta_{n3} [\%] = \frac{\overline{t}_{2023n1} - \overline{t}_{2020n1}}{\overline{t}_{2020n1}} * 100
+\end{equation*}
+
+\begin{minted}{sql}
+SELECT 
+	c."COMM_ID",
+	c."COMM_NAME",
+	c.mean_health_2020_n1,
+	c.mean_health_2023_n1,
+	ROUND(((c.mean_health_2023_n1 - c.mean_health_2020_n1) / c.mean_health_2020_n1 * 100.0)::NUMERIC, 2) as variation_n1,
+	c.geom
+FROM it_communes c
+WHERE SUBSTRING(c."NUTS_CODE" FROM 1 FOR 3) IN ('ITC','ITH');
+\end{minted}
+
+
+We report here the count of the municipalities that fall into each class in Table \ref{tab:acc_variation_classes}.
 
 
 

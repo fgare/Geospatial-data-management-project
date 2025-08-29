@@ -26,8 +26,8 @@ df = pd.read_sql(query, conn)
 conn.close()
 
 # Creazione boxplot
-plt.figure(figsize=(4, 8))
-plt.boxplot(df["accessibility"].dropna(), vert=True, patch_artist=True, meanline=True, showmeans=True, meanprops={"color": "red"})
+plt.figure(figsize=(8, 4))
+plt.boxplot(df["accessibility"].dropna(), vert=False, patch_artist=True, meanline=True, showmeans=True, meanprops={"color": "red"})
 
 # Etichette e titolo
 plt.xlabel("Accessibility time [min]")

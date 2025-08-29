@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{	}\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}ID\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{	}\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}COMM\PYGZus{}NAME\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{	}\PYG{k}{c}\PYG{p}{.}\PYG{n}{mean\PYGZus{}health\PYGZus{}2020\PYGZus{}n1}\PYG{p}{,}
+\PYG{+w}{	}\PYG{k}{c}\PYG{p}{.}\PYG{n}{mean\PYGZus{}health\PYGZus{}2023\PYGZus{}n1}\PYG{p}{,}
+\PYG{+w}{	}\PYG{n}{ROUND}\PYG{p}{(((}\PYG{k}{c}\PYG{p}{.}\PYG{n}{mean\PYGZus{}health\PYGZus{}2023\PYGZus{}n1}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{n}{mean\PYGZus{}health\PYGZus{}2020\PYGZus{}n1}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{k}{c}\PYG{p}{.}\PYG{n}{mean\PYGZus{}health\PYGZus{}2020\PYGZus{}n1}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{l+m+mi}{100}\PYG{p}{.}\PYG{l+m+mi}{0}\PYG{p}{)::}\PYG{n+nb}{NUMERIC}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{variation\PYGZus{}n1}\PYG{p}{,}
+\PYG{+w}{	}\PYG{k}{c}\PYG{p}{.}\PYG{n}{geom}
+\PYG{k}{FROM}\PYG{+w}{ }\PYG{n}{it\PYGZus{}communes}\PYG{+w}{ }\PYG{k}{c}
+\PYG{k}{WHERE}\PYG{+w}{ }\PYG{k}{SUBSTRING}\PYG{p}{(}\PYG{k}{c}\PYG{p}{.}\PYG{l+s+ss}{\PYGZdq{}NUTS\PYGZus{}CODE\PYGZdq{}}\PYG{+w}{ }\PYG{k}{FROM}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{k}{FOR}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{IN}\PYG{+w}{ }\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}ITC\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}ITH\PYGZsq{}}\PYG{p}{);}
+\end{Verbatim}
