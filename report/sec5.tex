@@ -1,31 +1,33 @@
 \section{Healthcare services accessibility}
 
-\subsection{Italian overview}
-
 Accessibility to healthcare services is a key determinant of population well-being and social equity. 
 Ensuring that people can reach medical facilities within a reasonable time is essential for timely diagnosis, treatment, and prevention of health conditions. 
 Differences in accessibility often reflect broader regional disparities, influencing quality of life, economic opportunities, and demographic sustainability. 
 Studying healthcare accessibility therefore provides valuable insights for politician, helping to identify underserved areas and design more inclusive health systems.
 
+
+\subsection{Italian overview}
+
+
 Figure \ref{map:acc_by_region_2023n1} show the mean accessibility time to reach the nearest hospital structure for Italian regions, it is expressed as driving minutes to the nearest medical centre.
-Classification was realized categorizing mean times in intervals of equal dimension, technique which allows us to highlight regions that have better or worse average times.
-As can be seen from the graph, Northern Italy tends to have lighter colours, a sign of easier access to health centres.
+Classification was realized categorizing mean times in intervals of equal dimension ($\qty{3.5}{\min}$), technique which allows us to highlight regions that have better or worse average times.
+As can be seen from the map, Northern Italy tends to have lighter colours, a sign of easier access to health centres.
 The most virtuous region of the peninsula proves to be Lombardia, with an average time of 12 minutes; on the other side of the ranking, Valle d'Aosta and Sardegna show the worst values, with average times up to 26 minutes.
 
 If we look at the map showing the travel time to the three closest healthcare facilities (Figure \ref{map:acc_by_region_2023n3}), the situation changes slightly. 
 For some regions, such as Trentino-Alto Adige and Basilicata, the situation worsens, placing them in the lowest class; for other regions, especially in central Italy, the situation improves slightly.
 
 
-\begin{figure}[tbp]
+\begin{figure}[ptb]
 	\centering
-	\includegraphics[width=0.5\textwidth]{img/Accessibilità per regione.pdf}
+	\includegraphics[height=0.4\textheight]{img/Accessibilità per regione.pdf}
 	\caption{Accessibility to the nearest healthcare service by region in 2023}
 	\label{map:acc_by_region_2023n1}
 \end{figure}
 
-\begin{figure}[tbp]
+\begin{figure}[ptb]
 	\centering
-	\includegraphics[width=0.5\textwidth]{img/Accessibilità per regione n3.pdf}
+	\includegraphics[height=0.4\textheight]{img/Accessibilità per regione n3.pdf}
 	\caption{Accessibility to the 3 nearest healthcare services by region in 2023}
 	\label{map:acc_by_region_2023n3}
 \end{figure}
@@ -67,25 +69,26 @@ The morphology of these areas, coupled with their lower population density and a
 In mountainous areas near the border, travel times often exceed 15 minutes to the nearest healthcare facility, and consistently exceed 30 minutes to reach the three closest facilities.
 
 
-\begin{figure}[tbp]
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=\textwidth]{img/Accessibilità per comune in 4 classi N.pdf}
 	\caption{Accessibility by class to reach the closest healthcare service in 2023}
 	\label{map:acc_by_comm_classes_2023n1}
 \end{figure}
 
-\begin{figure}[tbp]
+\begin{figure}[ptb]
 	\centering
 	\includegraphics[width=\textwidth]{img/Accessibilità per comune in 4 classi N 2023n3.pdf}
 	\caption{Accessibility by class to reach the 3 closest healthcare services in 2023}
 	\label{map:acc_by_comm_classes_2023n3}
 \end{figure}
 
-As shown in the histogram in Figure \ref{hist:acc_by_class_N_2023n1}, Northern Italy displays a favorable distribution of healthcare facilities, with 60\% of municipalities located within a 15-minute drive of a facility and 92\% within 30 minutes.
+Histogram in Figure \ref{hist:acc_by_class_N_2023n1} reports the number of municipalities in each accessibility class. Northern Italy displays a favourable distribution of healthcare facilities, with $60\%$ of municipalities located within a 15-minute drive of a facility and $92\%$ within 30 minutes.
+
 
 \begin{figure}[tbp]
 	\centering
-	\includegraphics[width=0.7\textwidth]{img/acc_comm_by_class_North_2023n1.pdf}
+	\includegraphics[width=0.8\textwidth]{img/acc_comm_by_class_North_2023n1.pdf}
 	\caption{Distribution of accessibility classes in Northern Italy municipalities. Time to reach the closest healthcare service in 2023}
 	\label{hist:acc_by_class_N_2023n1}
 \end{figure}
@@ -112,11 +115,15 @@ We can calculate the portion of population living in the municipalities of each 
 \smallskip
 
 Based on time needed to reach the 3 closest health facilities, we consider those in classes 3 and 4 as municipalities with poor health accessibility.
-There are 936037 people living in communes of the two lower classes, equivalent to 3.44\% of the population.
+%There are 936037 people living in communes of the two lower classes, equivalent to 3.44\% of the population.
 
 Overall, the distribution of the population across classes shows a generally favourable situation, with more than 96\% of residents living in municipalities classified as 1 or 2, where access to healthcare facilities is relatively fast.
-Nevertheless, almost one million people (3.44\% of the total population) live in municipalities belonging to classes 3 and 4, which indicates limited accessibility to healthcare services. 
+Nevertheless, almost one million people (\num{936037}, $3.44\%$ of the total population) live in municipalities belonging to classes 3 and 4, which indicates limited accessibility to healthcare services. 
 As discussed before, these areas coincide with sparsely populated rural or mountain regions, where lower population density and geographical barriers constrain the availability of facilities.
+
+Figure \ref{boxplot:acc_by_comm_2023n3} is a boxplot of travel times to reach the 3 closet medical centres.
+The median value of $\qty{17.8}{\min}$ indicates that half of the municipalities require less than this time to reach the facilities, while the first and third quartiles ($13.7$ and $\qty{25.8}{\min}$, respectively) show that $50\%$ of the municipalities fall within an interquartile range of approximately $\qty{12}{\min}$. 
+The mean travel time (\qty{20.9}{\min}) is higher than the median, suggesting a slight right-skewed distribution, likely driven by a subset of municipalities with particularly long travel times.
 
 
 \begin{figure}[tbp]
@@ -124,7 +131,7 @@ As discussed before, these areas coincide with sparsely populated rural or mount
 	\begin{subfigure}{\textwidth}
 		\centering
 		\includegraphics[width=0.8\linewidth]{img/boxplot_acc_by_comm_2023n3.pdf}
-		\caption{Boxplot of accessibility times}
+		\caption{Boxplot of accessibility times. Orange line represents the median, red dashed line represents the average}
 		\label{boxplot:acc_by_comm_2023n3}
 	\end{subfigure}
 	\medskip
@@ -157,17 +164,17 @@ The 7 intervals of change reported in Table \ref{tab:acc_variation_classes} have
 
 \begin{table}[tb]
 	\centering
-\begin{tabular}{l c S[table-format=4.0]}
+\begin{tabular}{l c S[table-format=4.0] S[table-alignment-mode=marker]}
 	\toprule
-	\textbf{Class} & \textbf{Interval} [\%] & \textbf{No. communes}\\
+	\textbf{Class} & \textbf{Interval} [\%] & \textbf{No. communes} & \textbf{\%}\\
 	\midrule
-	Sharp worsening & $\linterval{-\infty}{20}$ & 135\\
-	Relevant worsening & $\linterval{-20}{-10}$ & 348\\
-	Slight worsening & $\linterval{-10}{-5}$ & 586\\
-	No change & $\interval[open]{-5}{5}$ & 2298\\
-	Slight improvement & $\rinterval{5}{10}$ & 494\\
-	Relevant improvement & $\rinterval{10}{20}$ & 355\\
-	Sharp improvement & $\rinterval{20}{+\infty}$ & 236\\
+	Sharp improvement & $\leq -20$ & 135 & 3.03\\
+	Relevant improvement & $\linterval{-20}{-10}$ & 348 & 7.82\\
+	Slight improvement & $\linterval{-10}{-5}$ & 586 & 13.16\\
+	No change & $\interval[open]{-5}{5}$ & 2298 & 51.62\\
+	Slight worsening & $\rinterval{5}{10}$ & 494 & 11.1\\
+	Relevant worsening & $\rinterval{10}{20}$ & 355 & 7.97\\
+	Sharp worsening & $\geq 20$ & 236 & 5.3\\
 	\bottomrule
 \end{tabular}
 	\caption{Number of municipalities in each class of percentage change in access time to the nearest health centre}
@@ -181,11 +188,14 @@ The 7 intervals of change reported in Table \ref{tab:acc_variation_classes} have
 	\label{map:acc_variation_n1}
 \end{figure}
 
-As can be seen from Figure \ref{map:acc_variation_n1}, the majority of municipalities have not undergone significant changes in access times to medical facilities.
-Percentage change in time was obtained with the following query, using this formula:
+Map on Figure \ref{map:acc_variation_n1} highlights, by colouring them, the municipalities that have undergone changes in average access times. 
+Those municipalities that have achieved improvements of more than 5\% are coloured in green, those that have suffered deteriorations are coloured in red.
+
+Percentage change in time was obtained with the following query, which implements this formula:
 \begin{equation*}
-	\Delta_{n3} [\%] = \frac{\overline{t}_{2023n1} - \overline{t}_{2020n1}}{\overline{t}_{2020n1}} * 100
+	\Delta_{n1} [\%] = \frac{\overline{t}_{2023n1} - \overline{t}_{2020n1}}{\overline{t}_{2020n1}} * 100
 \end{equation*}
+$\Delta$ represents the percentage variation, $\overline{t}$ represents the mean access time in the specified year.
 
 \begin{minted}{sql}
 SELECT 
@@ -200,7 +210,10 @@ WHERE SUBSTRING(c."NUTS_CODE" FROM 1 FOR 3) IN ('ITC','ITH');
 \end{minted}
 
 
-We report here the count of the municipalities that fall into each class in Table \ref{tab:acc_variation_classes}.
+The count of municipalities falling into each class is reported in Table \ref{tab:acc_variation_classes}.
+Overall, more than half of the municipalities ($51.6\%$) experienced no substantial change, with average travel times remaining within a $\pm 5\%$ interval. 
+Among those that did change, improvements are more frequent than deteriorations: approximately $24\%$ of municipalities recorded some degree of improvement, while around $24\%$ experienced worsening conditions. 
+Notably, sharp changes are relatively rare, only $3\%$ of municipalities achieved improvements greater than $20\%$, and $5.3\%$ registered a deterioration of similar magnitude.
 
 
 
