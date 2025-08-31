@@ -1,0 +1,32 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usetheme{Madrid}
+\beamertemplatenavigationsymbolsempty
+\usepackage{graphicx}
+\usepackage{minted}
+\setminted[sql]{breaklines, tabsize=2, fontsize=\small}
+\usepackage[font=small]{caption}
+\usepackage{multicol}
+
+\title[Geospatial Data Management]{Eurostat data analysis}
+\subtitle{Geospatial data management project}
+\author{Federico Garegnani}
+\institute[UniMI]{Università degli Studi di Milano}
+\date{\today}
+\logo{\includegraphics[height=1cm]{img/unimi_logo2.png}}
+
+\begin{document}
+	\frame{\titlepage}
+	
+	\begin{frame}
+		\frametitle{Table of contents}
+		\tableofcontents
+	\end{frame}
+	
+	\input{slides/dataset_presentation.tex}
+	\input{slides/italian_territory.tex}
+	
+\end{document}
