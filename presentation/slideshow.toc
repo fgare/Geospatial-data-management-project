@@ -1,3 +1,7 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {1}{Datasets presentation}{3}{0}{1}
 \beamer@sectionintoc {2}{Study of the Italian territory}{7}{0}{2}
+\beamer@sectionintoc {3}{Accessibility to healthcare services}{10}{0}{3}
+\beamer@subsectionintoc {3}{1}{Italian overview}{10}{0}{3}
+\beamer@subsectionintoc {3}{2}{North of Italy}{11}{0}{3}
+\beamer@subsectionintoc {3}{3}{Population living in areas with low accessibility}{15}{0}{3}

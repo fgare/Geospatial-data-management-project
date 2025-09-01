@@ -1,2 +1,4 @@
 ./report/*.pdf
 !report/**/*.pdf
+
+./presentation/*.pdf

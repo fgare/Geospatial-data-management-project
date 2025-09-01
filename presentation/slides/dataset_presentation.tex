@@ -34,8 +34,8 @@
 	\begin{minted}{sql}
 WITH pop_calc AS (
 	SELECT 
-	c."COMM_ID",
-	ROUND(SUM(ST_Area(ST_Intersection(g.geom, c.geom)) / 1000000 * g."T")) AS pop
+		c."COMM_ID",
+		ROUND(SUM(ST_Area(ST_Intersection(g.geom, c.geom)) / 1000000 * g."T")) AS pop
 	FROM census_2021 g JOIN it_communes c ON ST_Intersects(g.geom, c.geom)
 	GROUP BY c."COMM_ID"
 )
