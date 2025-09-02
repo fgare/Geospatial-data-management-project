@@ -15,7 +15,7 @@ The three dataset chosen for this study are the following:
 \subsection{Census grid 2021}
 
 The Census Grid 2021 dataset, published by Eurostat, provides a harmonized representation of the resident population across the European Union based on the reference year 2021.
-The dataset distributes population counts into a regular grid of 1 km\textsuperscript{2} cells, offering a highly detailed spatial perspective on demographic distribution.
+The dataset distributes population counts into a regular grid of \qty{1}{km^2} cells, offering a highly detailed spatial perspective on demographic distribution.
 Unlike administrative boundaries, which vary in size and shape across countries, the grid system ensures comparability and uniformity, making it particularly suitable for spatial analysis and cross-country studies.
 
 Every cell contains the following demographic aggregated information:
@@ -35,12 +35,12 @@ Dataset uses ETRS89 as a reference system.
 \label{subsec:geo_acc_datas_pres}
 
 The Geographic Accessibility to Healthcare Services dataset provides harmonized information on the ease of reaching healthcare facilities across the European Union and EFTA countries. 
-The dataset is based on a grid of cells of 1 km\textsuperscript{2} and contains indicators of accessibility expressed in terms of travel distance and travel time from each grid cell to the nearest healthcare service.
+The dataset is based on a grid of cells of \qty{1}{km^2} and contains indicators of accessibility expressed in terms of travel distance and travel time from each grid cell to the nearest healthcare service.
 Travel time data rely on transport time measures using road network.
 
 This dataset provides two indicators for accessibility:
 \begin{itemize}
-	\item driving time from each populated 1km\textsuperscript{2} cell to the nearest healthcare service
+	\item driving time from each populated \qty{1}{km^2} cell to the nearest healthcare service
 	\item the average driving time to the three nearest services.
 \end{itemize}
 
@@ -53,16 +53,16 @@ Municipalities represent the lowest level of administrative governance in most E
 
 Here is the list of available fields:
 \begin{itemize}
-	\item COMM\_ID: identification code of the municipality;
-	\item CNTR\_ID: here is simply the copy of CNTR\_CODE, but it can also be an internal identification number of Eurostat;
-	\item CNTR\_CODE: country code as for ISO 3166-1 alpha-2;
-	\item COMM\_NAME: name of the municipality;
-	\item NAME\_ASCI: name of the municipality without special characters (ASCII characters);
-	\item TRUE\_FLAG: a technical attribute used to distinguish real polygons from those that exist only for cartographic or topological reasons;
-	\item NSI\_CODE: municipality code according to the National Statistics Institute;
-	\item NAME\_NSI: name of the municipality according to the National Statistics Institute;
-	\item NAME\_LATN: name of the municipality written with Latin characters. This is for countries which does not use Latin alphabet (Greece, Bulgaria, etc.);
-	\item NUTS\_CODE: NUTS CODE (Nomenclature of territorial units for statistics).
+	\item \texttt{COMM\_ID}: identification code of the municipality;
+	\item \texttt{CNTR\_ID}: here is simply the copy of CNTR\_CODE, but it can also be an internal identification number of Eurostat;
+	\item \texttt{CNTR\_CODE}: country code as for ISO 3166-1 alpha-2;
+	\item \texttt{COMM\_NAME}: name of the municipality;
+	\item \texttt{NAME\_ASCI}: name of the municipality without special characters (ASCII characters);
+	\item \texttt{TRUE\_FLAG}: a technical attribute used to distinguish real polygons from those that exist only for cartographic or topological reasons;
+	\item \texttt{NSI\_CODE}: municipality code according to the National Statistics Institute;
+	\item \texttt{NAME\_NSI}: name of the municipality according to the National Statistics Institute;
+	\item \texttt{NAME\_LATN}: name of the municipality written with Latin characters. This is for countries which does not use Latin alphabet (Greece, Bulgaria, etc.);
+	\item \texttt{NUTS\_CODE}: NUTS CODE (Nomenclature of territorial units for statistics).
 \end{itemize}
 
 Dataset uses ETRS89 as a reference system.

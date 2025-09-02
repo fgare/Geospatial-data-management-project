@@ -38,8 +38,8 @@ ON grid_accessibility_health USING GIST(geom);
 \subsection{Population calculation by municipality}
 
 Since the dataset related to communes only contains borders information but no data regarding the population, it was necessary to integrate it with \texttt{census\_2021} dataset.
-However, as described in the dataset presentation, they divide territory in different way: the \texttt{communes} dataset has the precise polygon representing commune border, while \texttt{census} dataset rely on a grid of cells.
-This obliged us to perform some form of approximation in order to compute commune population.
+However, as described in the dataset presentation, they divide territory in different ways: the \texttt{communes} dataset has the precise polygon representing commune border, while \texttt{census} dataset rely on a grid of cells.
+This obliged us to perform some form of approximation in order to compute communes population.
 
 The problem is limited to the cells which intercept a commune border; here the municipal territory can overlap only partly with the cell area.
 There are two possible approximations, we can consider all the cells that intersect the municipal territory or we can consider only the cells entirely within the border.
@@ -52,13 +52,13 @@ In order to compute the total population in the most possible precise way the fo
 	P_{C} = P_{G} \sum \frac{A(C \cap G)}{A(G)}
 \end{equation}
 
-Here $C$ represents the commune, $G$ represents the cell of the grid and $P$ the population.\\
+Where $C$ represents the commune, $G$ represents the cell of the grid and $P$ the population.\\
 This formula considers the fraction of cell area covered by the commune and multiply it for the total population living inside the cell.
 Obviously, even this formula finds a compromise, assuming people to be uniformly distributed on the cell area.
 
 We are going to store the computed value for population in a new column of the table \texttt{it\_communes} called \texttt{pop}.
 Here is the query to add the new column and insert the value for population for each commune in Italy.
-Since we know cells to have an area of 1 km\textsuperscript{2}, we can omit \mintinline{sql}|ST_AREA(g.geom)| from the denominator, substituting it with $1'000'000$, that is 1 km\textsuperscript{2} converted to m\textsuperscript{2}.
+Since we know cells to have an area of \qty{1}{km^2}, we can omit \mintinline{sql}|ST_AREA(g.geom)| from the denominator, substituting it with \num{1000000}, that is \qty{1}{km^2} converted to \si{m^2}.
 
 \begin{minted}{sql}
 ALTER TABLE it_communes ADD COLUMN pop INTEGER;

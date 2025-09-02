@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.6)  1 SEP 2025 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.6)  1 SEP 2025 22:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1429,21 +1429,21 @@ Package pdftex.def Info: img/unimi_logo2.png  used on input line 98.
 ]
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 114.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 115.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
  [16
 
 ]
-<../report/img/var accessibilità n1 nord.pdf, id=331, 845.1575pt x 597.23125pt
+<../report/img/var accessibilità n1 nord.pdf, id=332, 845.1575pt x 597.23125pt
 >
 File: ../report/img/var accessibilità n1 nord.pdf Graphic file (type pdf)
 <use ../report/img/var accessibilità n1 nord.pdf>
 Package pdftex.def Info: ../report/img/var accessibilità n1 nord.pdf  used on 
-input line 124.
+input line 125.
 (pdftex.def)             Requested size: 294.88104pt x 208.38046pt.
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 124.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 125.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
  [17
 
@@ -1468,10 +1468,10 @@ runsystem(del slideshow.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 31801 strings out of 476012
- 667371 string characters out of 5791665
+ 31803 strings out of 476012
+ 667387 string characters out of 5791665
  1939496 words of memory out of 5000000
- 53288 multiletter control sequences out of 15000+600000
+ 53290 multiletter control sequences out of 15000+600000
  573420 words of font info for 75 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  128i,15n,123p,544b,941s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1490,7 +1490,7 @@ s/type1/public/cm-super/sfss1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pu
 blic/cm-super/sfss1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-su
 per/sfsx1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt10
 00.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on slideshow.pdf (17 pages, 4363841 bytes).
+Output written on slideshow.pdf (17 pages, 4363894 bytes).
 PDF statistics:
  427 PDF objects out of 1000 (max. 8388607)
  232 compressed objects within 3 object streams

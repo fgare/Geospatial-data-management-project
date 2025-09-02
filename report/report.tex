@@ -4,6 +4,11 @@
 \usepackage[english]{babel}
 \usepackage[nochapters, pdfspacing]{classicthesis}
 
+\usepackage[autostyle=true]{csquotes}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{./bib/gdm_bib.bib}
+\nocite{*}
+
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{siunitx}
@@ -41,5 +46,7 @@ Eurostat data analysis\\
 	\input{sec3.tex}
 	\input{sec4.tex}
 	\input{sec5.tex}
+	
+	\printbibliography[heading=bibintoc]
 	
 \end{document}
