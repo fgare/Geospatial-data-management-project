@@ -4,7 +4,7 @@
 \headcommand {\beamer@framepages {2}{2}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Datasets presentation}{3}{Datasets presentation}{0}}
+\headcommand {\sectionentry {1}{Datasets presentation and first operations}{3}{Datasets presentation and first operations}{0}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
@@ -13,42 +13,48 @@
 \headcommand {\beamer@framepages {5}{5}}
 \headcommand {\slideentry {1}{0}{4}{6/6}{}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@sectionpages {3}{6}}
-\headcommand {\beamer@subsectionpages {3}{6}}
-\headcommand {\sectionentry {2}{Study of the Italian territory}{7}{Study of the Italian territory}{0}}
-\headcommand {\slideentry {2}{0}{1}{7/7}{}{0}}
+\headcommand {\slideentry {1}{0}{5}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {2}{0}{2}{8/8}{}{0}}
+\headcommand {\beamer@sectionpages {3}{7}}
+\headcommand {\beamer@subsectionpages {3}{7}}
+\headcommand {\sectionentry {2}{Study of the Italian territory}{8}{Study of the Italian territory}{0}}
+\headcommand {\slideentry {2}{0}{1}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {2}{0}{3}{9/9}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@sectionpages {7}{9}}
-\headcommand {\beamer@subsectionpages {7}{9}}
-\headcommand {\sectionentry {3}{Accessibility to healthcare services}{10}{Accessibility to healthcare services}{0}}
-\headcommand {\beamer@subsectionpages {10}{9}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{10}{Italian overview}}
-\headcommand {\slideentry {3}{1}{1}{10/10}{Italian overview}{0}}
+\headcommand {\slideentry {2}{0}{3}{10/10}{}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{11}{North of Italy}}
-\headcommand {\slideentry {3}{2}{1}{11/11}{North of Italy}{0}}
+\headcommand {\beamer@sectionpages {8}{10}}
+\headcommand {\beamer@subsectionpages {8}{10}}
+\headcommand {\sectionentry {3}{Accessibility to healthcare services}{11}{Accessibility to healthcare services}{0}}
+\headcommand {\beamer@subsectionpages {11}{10}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{11}{Italian overview}}
+\headcommand {\slideentry {3}{1}{1}{11/11}{Italian overview}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{2}{2}{12/12}{North of Italy}{0}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{12}{North of Italy}}
+\headcommand {\slideentry {3}{2}{1}{12/12}{North of Italy}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {3}{2}{3}{13/13}{North of Italy}{0}}
+\headcommand {\slideentry {3}{2}{2}{13/13}{North of Italy}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {3}{2}{4}{14/14}{North of Italy}{0}}
+\headcommand {\slideentry {3}{2}{3}{14/14}{North of Italy}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\beamer@subsectionpages {11}{14}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{15}{Population living in areas with low accessibility}}
-\headcommand {\slideentry {3}{3}{1}{15/15}{Population living in areas with low accessibility}{0}}
+\headcommand {\slideentry {3}{2}{4}{15/15}{North of Italy}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{3}{2}{16/16}{Population living in areas with low accessibility}{0}}
+\headcommand {\beamer@subsectionpages {12}{15}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{16}{Population living in areas with low accessibility}}
+\headcommand {\slideentry {3}{3}{1}{16/16}{Population living in areas with low accessibility}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{3}{3}{17/17}{Population living in areas with low accessibility}{0}}
+\headcommand {\slideentry {3}{3}{2}{17/17}{Population living in areas with low accessibility}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\beamer@partpages {1}{17}}
-\headcommand {\beamer@subsectionpages {15}{17}}
-\headcommand {\beamer@sectionpages {10}{17}}
-\headcommand {\beamer@documentpages {17}}
-\headcommand {\gdef \inserttotalframenumber {17}}
+\headcommand {\slideentry {3}{3}{3}{18/18}{Population living in areas with low accessibility}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {3}{3}{4}{19/19}{Population living in areas with low accessibility}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {3}{3}{5}{20/20}{Population living in areas with low accessibility}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@partpages {1}{20}}
+\headcommand {\beamer@subsectionpages {16}{20}}
+\headcommand {\beamer@sectionpages {11}{20}}
+\headcommand {\beamer@documentpages {20}}
+\headcommand {\gdef \inserttotalframenumber {20}}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.6)  1 SEP 2025 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.6)  3 SEP 2025 23:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1018,6 +1018,13 @@ Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
 \backup@length=\skip75
 \ar@cellbox=\box140
 ))
+(c:/texlive/2024/texmf-dist/tex/latex/quoting/quoting.sty
+Package: quoting 2014/01/28 v0.1c Consolidated environment for displayed text
+\quo@toppartop=\skip76
+)
+(c:/texlive/2024/texmf-dist/tex/latex/interval/interval.sty
+Package: interval 2019/03/06 v0.4
+)
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > sl
 ideshow.aex <nul: /p x=^%~$PATH:i>> slideshow.aex)...executed.
 
@@ -1032,24 +1039,24 @@ File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
 (./slideshow.aux)
 \openout1 = `slideshow.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1107,69 +1114,69 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 24.
+Package hyperref Info: Link coloring OFF on input line 31.
 
 (./slideshow.out) (./slideshow.out)
 \@outlinefile=\write7
 \openout7 = `slideshow.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 24.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 24.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 31.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 24.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 24.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 24.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 24.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 24.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 24.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 24.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 24.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 24.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 24.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 24.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 24.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 24.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 24.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 31.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 24.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 24.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 24.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 24.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 24.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 31.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 24.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 24.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 31.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 31.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 24
+(Font)              `pureletters' in the math version `normal' on input line 31
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 24
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 31
 .
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 24.
+(Font)              `pureletters' in the math version `bold' on input line 31.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 24
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 31
 .
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 24.
+ut line 31.
 
 (c:/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
 glish.dict
@@ -1205,12 +1212,12 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 24.
+or `english'. on input line 31.
  (./slideshow.nav)
 <img/unimi_logo2.png, id=51, 1204.5pt x 1205.50375pt>
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 25.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 32.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
  [1
 
@@ -1219,65 +1226,81 @@ texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./img/unimi_logo2.png>] (
 ./slideshow.toc)
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 30.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 37.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
  [2
 
 ]
 (./slides/dataset_presentation.tex
-File: img/unimi_logo2.png Graphic file (type png)
-<use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 13.
-(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
- [3
-
-]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
-1.
-
-(c:/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-File: img/unimi_logo2.png Graphic file (type png)
-<use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 21.
-(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
- [4
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
 
 
 (c:/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 28.
+ut line 25.
 
 (c:/texlive/2024/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
+File: img/unimi_logo2.png Graphic file (type png)
+<use img/unimi_logo2.png>
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 25.
+(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
+
+[3
+
+]
+File: img/unimi_logo2.png Graphic file (type png)
+<use img/unimi_logo2.png>
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 43.
+(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
+ [4
+
+]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 4
+9.
+ (c:/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
 \openout5 = `slideshow.pyg'.
 
 
 (./_minted-slideshow/default.pygstyle)
-(./_minted-slideshow/50A7C4C39EA35D57FFEF48B6FC31B2FED589746893F0B004FB50549F62
+(./_minted-slideshow/CEDEE6ADA157C128BFD08E668D2F23B6D589746893F0B004FB50549F62
 750F9B.pygtex
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
-)
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
+5.
+ (c:/texlive/2024/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+))
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 49.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 64.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
  [5
+
+{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+\openout5 = `slideshow.pyg'.
+
+
+(./_minted-slideshow/50A7C4C39EA35D57FFEF48B6FC31B2FED589746893F0B004FB50549F62
+750F9B.pygtex)
+File: img/unimi_logo2.png Graphic file (type png)
+<use img/unimi_logo2.png>
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 92.
+(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
+ [6
 
 ]
 \openout5 = `slideshow.pyg'.
@@ -1285,34 +1308,34 @@ Package pdftex.def Info: img/unimi_logo2.png  used on input line 49.
 
 (./_minted-slideshow/5D9D1B4947FCDC518E4E9C07E729CFCED589746893F0B004FB50549F62
 750F9B.pygtex)
-Overfull \vbox (1.53612pt too high) detected at line 76
+Overfull \vbox (1.53612pt too high) detected at line 120
  []
 
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 76.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 120.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
-[6
+[7
 
 ]) (./slides/italian_territory.tex
-<../report/img/regioni per popolazione.pdf, id=125, 614.295pt x 794.97pt>
+<../report/img/regioni per popolazione.pdf, id=139, 614.295pt x 794.97pt>
 File: ../report/img/regioni per popolazione.pdf Graphic file (type pdf)
 <use ../report/img/regioni per popolazione.pdf>
 Package pdftex.def Info: ../report/img/regioni per popolazione.pdf  used on inp
 ut line 11.
-(pdftex.def)             Requested size: 201.27448pt x 260.4746pt.
+(pdftex.def)             Requested size: 181.14983pt x 234.42554pt.
 
-Overfull \vbox (39.71066pt too high) detected at line 11
+Overfull \vbox (13.6616pt too high) detected at line 11
  []
 
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
 Package pdftex.def Info: img/unimi_logo2.png  used on input line 11.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
-[7
+[8
 
  <../report/img/regioni per popolazione.pdf>]
-<../report/img/numOfComm_by_class_v2.pdf, id=136, 722.7pt x 433.62pt>
+<../report/img/numOfComm_by_class_v2.pdf, id=149, 722.7pt x 433.62pt>
 File: ../report/img/numOfComm_by_class_v2.pdf Graphic file (type pdf)
 <use ../report/img/numOfComm_by_class_v2.pdf>
 Package pdftex.def Info: ../report/img/numOfComm_by_class_v2.pdf  used on input
@@ -1322,10 +1345,10 @@ File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
 Package pdftex.def Info: img/unimi_logo2.png  used on input line 22.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
- [8
+ [9
 
  <../report/img/numOfComm_by_class_v2.pdf>]
-<../report/img/pareto_pop_by_comm.pdf, id=185, 722.7pt x 433.62pt>
+<../report/img/pareto_pop_by_comm.pdf, id=198, 722.7pt x 433.62pt>
 File: ../report/img/pareto_pop_by_comm.pdf Graphic file (type pdf)
 <use ../report/img/pareto_pop_by_comm.pdf>
 Package pdftex.def Info: ../report/img/pareto_pop_by_comm.pdf  used on input li
@@ -1335,17 +1358,17 @@ File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
 Package pdftex.def Info: img/unimi_logo2.png  used on input line 33.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
- [9
+ [10
 
  <../report/img/pareto_pop_by_comm.pdf>])
 (./slides/healthcare_accessibility.tex
-<../report/img/Accessibilità per regione.pdf, id=231, 614.295pt x 794.97pt>
+<../report/img/Accessibilità per regione.pdf, id=244, 614.295pt x 794.97pt>
 File: ../report/img/Accessibilità per regione.pdf Graphic file (type pdf)
 <use ../report/img/Accessibilità per regione.pdf>
 Package pdftex.def Info: ../report/img/Accessibilità per regione.pdf  used on 
 input line 18.
 (pdftex.def)             Requested size: 136.97203pt x 177.25934pt.
-<../report/img/Accessibilità per regione n3.pdf, id=232, 614.295pt x 794.97pt>
+<../report/img/Accessibilità per regione n3.pdf, id=245, 614.295pt x 794.97pt>
 
 File: ../report/img/Accessibilità per regione n3.pdf Graphic file (type pdf)
 <use ../report/img/Accessibilità per regione n3.pdf>
@@ -1356,96 +1379,115 @@ File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
 Package pdftex.def Info: img/unimi_logo2.png  used on input line 18.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
- [10
+ [11
 
  <../report/img/Accessibilità per regione.pdf> <../report/img/Accessibilità p
 er regione n3.pdf>]
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 40.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 42.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
- [11
+ [12
 
 ]
-<../report/img/Accessibilità per comune in 4 classi N.pdf, id=254, 794.97pt x 
+<../report/img/Accessibilità per comune in 4 classi N.pdf, id=267, 794.97pt x 
 614.295pt>
 File: ../report/img/Accessibilità per comune in 4 classi N.pdf Graphic file (t
 ype pdf)
 <use ../report/img/Accessibilità per comune in 4 classi N.pdf>
 Package pdftex.def Info: ../report/img/Accessibilità per comune in 4 classi N.
-pdf  used on input line 52.
+pdf  used on input line 54.
 (pdftex.def)             Requested size: 269.66759pt x 208.38046pt.
 
-Overfull \vbox (13.61653pt too high) detected at line 52
+Overfull \vbox (13.61653pt too high) detected at line 54
  []
 
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 52.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 54.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
-[12
+[13
 
  <../report/img/Accessibilità per comune in 4 classi N.pdf>]
-<../report/img/Accessibilità per comune in 4 classi N 2023n3.pdf, id=266, 794.
+<../report/img/Accessibilità per comune in 4 classi N 2023n3.pdf, id=279, 794.
 97pt x 614.295pt>
 File: ../report/img/Accessibilità per comune in 4 classi N 2023n3.pdf Graphic 
 file (type pdf)
 <use ../report/img/Accessibilità per comune in 4 classi N 2023n3.pdf>
 Package pdftex.def Info: ../report/img/Accessibilità per comune in 4 classi N 
-2023n3.pdf  used on input line 64.
+2023n3.pdf  used on input line 66.
 (pdftex.def)             Requested size: 269.66759pt x 208.38046pt.
 
-Overfull \vbox (13.61653pt too high) detected at line 64
+Overfull \vbox (13.61653pt too high) detected at line 66
  []
 
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 64.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 66.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
-[13
+[14
 
  <../report/img/Accessibilità per comune in 4 classi N 2023n3.pdf>]
-<../report/img/acc_comm_by_class_North_2023n1.pdf, id=278, 462.52798pt x 346.89
+<../report/img/acc_comm_by_class_North_2023n1.pdf, id=290, 462.52798pt x 346.89
 601pt>
 File: ../report/img/acc_comm_by_class_North_2023n1.pdf Graphic file (type pdf)
 <use ../report/img/acc_comm_by_class_North_2023n1.pdf>
 Package pdftex.def Info: ../report/img/acc_comm_by_class_North_2023n1.pdf  used
- on input line 76.
+ on input line 78.
 (pdftex.def)             Requested size: 243.10606pt x 182.33142pt.
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 76.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 78.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
 
-[14
+[15
 
  <../report/img/acc_comm_by_class_North_2023n1.pdf>]
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 98.
-(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
- [15
-
-]
-File: img/unimi_logo2.png Graphic file (type png)
-<use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 115.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 101.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
  [16
 
 ]
-<../report/img/var accessibilità n1 nord.pdf, id=332, 845.1575pt x 597.23125pt
+File: img/unimi_logo2.png Graphic file (type png)
+<use img/unimi_logo2.png>
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 126.
+(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
+ [17
+
+]
+File: img/unimi_logo2.png Graphic file (type png)
+<use img/unimi_logo2.png>
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 143.
+(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
+ [18
+
+]
+\openout5 = `slideshow.pyg'.
+
+
+(./_minted-slideshow/803A607362CB3FF0CFB58CE6C1911156D589746893F0B004FB50549F62
+750F9B.pygtex)
+File: img/unimi_logo2.png Graphic file (type png)
+<use img/unimi_logo2.png>
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 163.
+(pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
+ [19
+
+]
+<../report/img/var accessibilità n1 nord.pdf, id=359, 845.1575pt x 597.23125pt
 >
 File: ../report/img/var accessibilità n1 nord.pdf Graphic file (type pdf)
 <use ../report/img/var accessibilità n1 nord.pdf>
 Package pdftex.def Info: ../report/img/var accessibilità n1 nord.pdf  used on 
-input line 125.
+input line 173.
 (pdftex.def)             Requested size: 294.88104pt x 208.38046pt.
 File: img/unimi_logo2.png Graphic file (type png)
 <use img/unimi_logo2.png>
-Package pdftex.def Info: img/unimi_logo2.png  used on input line 125.
+Package pdftex.def Info: img/unimi_logo2.png  used on input line 173.
 (pdftex.def)             Requested size: 28.41418pt x 28.45274pt.
- [17
+ [20
 
  <../report/img/var accessibilità n1 nord.pdf>])
 \tf@nav=\write8
@@ -1457,24 +1499,25 @@ Package pdftex.def Info: img/unimi_logo2.png  used on input line 125.
 \tf@snm=\write10
 \openout10 = `slideshow.snm'.
 
- (./slideshow.aux)
+
+(./slideshow.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
 Package rerunfilecheck Info: File `slideshow.out' has not changed.
-(rerunfilecheck)             Checksum: 9454E56CD7B434AF2CAF03909E27BB5D;1184.
+(rerunfilecheck)             Checksum: CC63F6B68CA7215C21CC7CC8A4741021;1298.
 runsystem(del slideshow.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 31803 strings out of 476012
- 667387 string characters out of 5791665
- 1939496 words of memory out of 5000000
- 53290 multiletter control sequences out of 15000+600000
- 573420 words of font info for 75 fonts, out of 8000000 for 9000
+ 32024 strings out of 476012
+ 673310 string characters out of 5791665
+ 1942496 words of memory out of 5000000
+ 53484 multiletter control sequences out of 15000+600000
+ 577771 words of font info for 87 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 128i,15n,123p,544b,941s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,680b,941s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
 live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2024/texmf-dis
@@ -1482,18 +1525,20 @@ t/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2024/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmssi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-sy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c
-:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/
-2024/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2024/texmf
--dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2024/texmf-dist/font
-s/type1/public/cm-super/sfss1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pu
-blic/cm-super/sfss1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-su
-per/sfsx1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt10
-00.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on slideshow.pdf (17 pages, 4363894 bytes).
+sy6.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsi1095.pfb><c
+:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb><c:/texlive/
+2024/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb><c:/texlive/2024/texmf
+-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2024/texmf-dist/font
+s/type1/public/cm-super/sfss0900.pfb><c:/texlive/2024/texmf-dist/fonts/type1/pu
+blic/cm-super/sfss1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-su
+per/sfss1095.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss14
+40.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb><c:
+/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb><c:/texlive/2
+024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on slideshow.pdf (20 pages, 4390268 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 41 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 259 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 195 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,25 +1,68 @@
-\section{Datasets presentation}
+\section{Datasets presentation and first operations}
 
 \begin{frame}
-	\frametitle{Presentation of the datasets used}
+	\frametitle{Presentation of the datasets used (1)}
 	
 	3 datasets:
 	\begin{enumerate}
-		\item Census grid 2021
-		\item Geographic accessibility
-		\item Communes
+		\item \emph{Census grid 2021}\\
+			\begin{itemize}
+				\item Grid of \qty{1}{km^2} cells
+				\item Columns: sex, age group, activity status, place of birth, population, population one year prior the census
+			\end{itemize}
+			
+		\item \emph{Geographic accessibility}\\
+		\begin{itemize}
+			\item Grid of cells of \qty{1}{km^2}
+			\item Accessibility as travel time from each cell to the nearest healthcare service
+			\item To catch each grid cell to the road network, the nearest network node from the centroid inside the cell was used
+			\item Time measured as travel by car using the road network, data from TomTom Multinet datasets.
+			Dijkstra algorithm used to calculate the shortest distance
+		\end{itemize}
+		
 	\end{enumerate}
 	
 \end{frame}
 
 
 \begin{frame}
-	\frametitle{Filtering the datasets}
+	\frametitle{Presentation of the datasets used (2)}
 	
-	Definition of table \texttt{it\_communes} and indexes for all the tables.
+	\begin{enumerate}
+		\setcounter{enumi}{2}
+		\item \emph{Communes}
+			\begin{itemize}
+				\item Administrative boundaries of municipalities
+				\item Columns: commune id, country id, country code, commune name, ASCII name, true flag, NSI code, NSI name, Latin name, NUTS code
+			\end{itemize}
+	\end{enumerate}
+	\medskip
+	
+	All the datasets use ETRS89 as reference system.
 	
 \end{frame}
 
+
+\begin{frame}[containsverbatim]
+	\frametitle{Filtering the datasets}
+	
+	Definition of table \texttt{it\_communes} and indexes for all the tables.
+	\begin{figure}[h]
+	\begin{minted}{sql}
+CREATE TABLE it_communes AS (
+	SELECT *
+	FROM "all_communes" c
+	WHERE "CNTR_CODE" = 'IT'
+);
+
+CREATE INDEX it_communes_idx
+ON it_communes USING GIST (geom);
+...
+	\end{minted}
+	\end{figure}
+	
+\end{frame}
+%TODO possibile inserire immagine che mostra confine di un comune e la griglia
 
 \begin{frame}[containsverbatim]
 	\frametitle{Calculation of the population by municipality}
@@ -52,7 +95,8 @@ WHERE c."COMM_ID" = p."COMM_ID";
 \begin{frame}[containsverbatim]
 	\frametitle{Calculation of mean accessibility value}
 	
-	Computation of the mean accessibility times by commune to the closest healthcare structure and to the 3 closest ones. For years 2020 and 2023.
+	Computation of the mean accessibility times by commune to the closest healthcare structure and to the 3 closest ones.
+	Years 2020 and 2023.
 	\begin{figure}[h]
 	\begin{minted}{sql}
 WITH avg_t AS (
