@@ -62,7 +62,7 @@ ON it_communes USING GIST (geom);
 	\end{figure}
 	
 \end{frame}
-%TODO possibile inserire immagine che mostra confine di un comune e la griglia
+
 
 \begin{frame}[containsverbatim]
 	\frametitle{Calculation of the population by municipality}
@@ -89,6 +89,17 @@ WHERE c."COMM_ID" = p."COMM_ID";
 	\end{minted}
 	\end{figure}
 	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Overlapping of polygons and grid cells}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{../report/img/Milano comm x grid.pdf}
+		\caption{Polygon representing the commune of Milan overlapped with the grid cells intersecting it}
+	\end{figure}
 \end{frame}
 
 
